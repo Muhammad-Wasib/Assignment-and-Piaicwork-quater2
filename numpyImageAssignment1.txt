@@ -1,0 +1,19 @@
+Assignment #1
+NAME : Muhammad Wasib
+ROLL NO : AIC008593
+Saylani head office
+Timing: 9am To 1pm
+Day: Sunday
+Teacher: Sir Anees Ahmed
+
+import matplotlib.pylab as plt  #importing matplotlip librrary as plt
+import matplotlib.image as mpimg # matplotlip image as mpimg
+import numpy as np #importing numpy library as np
+from PIL import Image as im #pil library for image
+list1=[] #empty list
+for i in range(20): #lopp for 20 images
+    im1=(im.open('C:\\Users\\muham\\Desktop\\waters\\'+str(i+1)+'.jpg')) #location of 20 images with open function
+    im1=im1.resize((300,300),im.ANTIALIAS) #resizing images
+    im1.save('resize'+str(i+1)+'.jpg')
+    list1.append(np.array(im1))# convert images to numpy array and save it sucessfully.
+(list1)
